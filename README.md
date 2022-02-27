@@ -1,8 +1,8 @@
-# POC_CCR
+# CCR-SGX
 
 Credit to https://github.com/apache/incubator-teaclave-sgx-sdk, without which this project would not be possible.
 
-This POC Application runs on Intel SGX using the Rust SGX SDK.
+This proof of concept application runs on Intel SGX using the Rust SGX SDK.
 
 This file serves as a guide for setting up the application on a local machine and running the project in simulation mode.
 
@@ -30,7 +30,7 @@ The setup will cover the steps to setup the application on a MacOS machine that 
   * OR run `export SGX_MODE=SW` in your terminal
 * Test if the sample code is working:
 
-  `root@docker:~/sgx/samplecode/helloworld# make`
+  `root@docker:~/sgx/samplecode/helloworld# make` (If you have issues try `make SGX_MODE=SW`)
   
   `root@docker:~/sgx/samplecode/helloworld# cd bin`
   
@@ -43,18 +43,18 @@ The setup will cover the steps to setup the application on a MacOS machine that 
 * Clone this repository into the samplecode folder
 
 4. Download the data for the application:
-* Download the compressed file containing all the data from [Google Drive](https://drive.google.com/file/d/1MTeFmfN4V02Uyb2WOoi4xtI4TG5UBw8J/view?usp=sharing)
-* Unzip the compressed file and extract all the json files to `/your/path/to/rust-sgx/samplecode/POC_CCR/data/`
+* Download the compressed file containing all the data from [Google Drive](https://drive.google.com/file/d/1M9oUqNDrixGgt67yRd85YbVUhOeprBtz/view?usp=sharing)
+* Unzip the compressed file and extract all the json files to `/your/path/to/rust-sgx/samplecode/CCR-SGX/data/`
 
 5. Running the POC Application
 * Remember to start the docker container, consult Step 1.
-* Navigate to the correct folder: `root@docker:~# cd sgx/samplecode/POC_CCR`
+* Navigate to the correct folder: `root@docker:~# cd sgx/samplecode/CCR-SGX`
 * Run `export SGX_MODE=SW` in your terminal
 
-  `root@docker:~/sgx/samplecode/POC_CCR# make`
+  `root@docker:~/sgx/samplecode/CCR-SGX# make`
   
-  `root@docker:~/sgx/samplecode/POC_CCR# cd bin`
+  `root@docker:~/sgx/samplecode/CCR-SGX# cd bin`
   
-  `root@docker:~/sgx/samplecode/POC_CCR/bin# ./app`
+  `root@docker:~/sgx/samplecode/CCR-SGX/bin# ./app`
 
 
