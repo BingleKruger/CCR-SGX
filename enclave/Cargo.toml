@@ -1,7 +1,7 @@
 [package]
 name = "Helloworldsampleenclave"
 version = "1.0.0"
-authors = ["Bingle Kruger"]
+authors = ["Anon"]
 
 [lib]
 name = "helloworldsampleenclave"
